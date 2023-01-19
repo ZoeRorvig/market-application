@@ -26,24 +26,33 @@ Product.init(
             type: DataTypes.FLOAT,
             allowNull: false,
             validate: {
-                isDecimal: true,
+                isDecimal: true
             }
         },
         image: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         date_posted: {
             type: DataTypes.DATE,
-            defaultValue: DataTypes.NOW,
+            defaultValue: DataTypes.NOW
         },
         user_id: {
             type: DataTypes.INTEGER,
+            allowNull: false,
             references: {
                 model: 'user',
-                key: 'id',
+                key: 'id'
             }
-        }
+        },
+        category_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'category',
+                key: 'id'
+            }
+        },
     },
     {
         sequelize,

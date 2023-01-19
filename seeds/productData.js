@@ -2,10 +2,10 @@ const { Product } = require('../models');
 
 const productData = [
     {
-        title: '',
-        description: '',
+        title: 'Test',
+        description: 'Test',
         price: 1,
-        image: '',
+        image: 'Test',
         date_posted: '1/19/2023',
         user_id: 1,      
         category_id: 1,

@@ -13,10 +13,15 @@ router.get('/', async (req, res) => {
             }],
         });
 
-        const products = productData.map((product) =>
-            product.get({ plain: true })
-        );
-        res.render('homepage', products);
+        res.status(200).json(productData);
+
+
+        // const products = productData.map((product) =>
+        //     product.get({ plain: true })
+        // );
+        // res.render('homepage', products);
+
+
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
@@ -34,9 +39,12 @@ router.get('/products/:id', async (req, res) => {
                 attributes: ['username'],
             }],
         });
-
-        const product = productData.get({ plain: true });
-        res.render('product', product);
+        
+        res.status(200).json(categoryData);
+        
+        // const product = productData.get({ plain: true });
+        // res.render('product', product);
+        
     } catch (err) {
         console.log(err);
         res.status(500).json(err);

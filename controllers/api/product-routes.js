@@ -45,7 +45,7 @@ router.get('/products/:id', async (req, res) => {
 
 // Post new product
 
-router.product('/', async (req, res) => {
+router.post('/', async (req, res) => {
     try { 
       const productData = await Product.create({
       title: req.body.title,
@@ -54,6 +54,7 @@ router.product('/', async (req, res) => {
       image: req.body.image,
       date_posted: req.body.date_posted,
       user_id: req.body.user_id,
+      category_id: req.body.category_id,
     });
     res.status(200).json(productData)
   } catch (err) {

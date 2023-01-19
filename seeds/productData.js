@@ -6,9 +6,9 @@ const productData = [
         description: '',
         price: 1,
         image: '',
-        date_posted: '',
+        date_posted: '1/19/2023',
         user_id: 1,      
-
+        category_id: 1,
     },
 ]
 

@@ -6,12 +6,12 @@ const seedCategories = require('./categoryData');
 const init = async () => {
   await sequelize.sync({ force: true });
 
-  await seedProducts();
-
   await seedUser();
 
   await seedCategories();
-  
+
+  await seedProducts();
+
   process.exit(0);
 };
 

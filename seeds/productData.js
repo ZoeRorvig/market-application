@@ -4,7 +4,7 @@ const productData = [
     {
         title: '',
         description: '',
-        price: '',
+        price: 1,
         image: '',
         date_posted: '',
         user_id: 1,      

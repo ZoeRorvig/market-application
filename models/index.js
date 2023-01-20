@@ -7,7 +7,7 @@ User.hasMany(Product, {
 });
 
 Category.hasMany(Product, {
-  foreignKey: 'product_id'
+  foreignKey: 'category_id'
 });
 
 Product.belongsTo(User, {

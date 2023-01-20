@@ -1,12 +1,30 @@
 const router = require('express').Router();
-const {} = require('../models/');
+const { Product, User, Category } = require('../models/');
 
 // get all posts for homepage
 router.get('/', async (req, res) => {
   try {
-    res.render('homepage', { 
+    const productData = await Product.findAll({
+      attributes: ['id', 'title', 'description', 'price', 'image', 'created_at', 'user_id', 'category_id'],
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        }, {
+          model: Category,
+          attributes: ['category_name'],
+        }
+      ],
+    });
+
+    // res.status(200).json(productData);
+
+    const products = productData.map((product) => product.get({ plain: true }));
+   
+    res.render('homepage', {
+      products,
       loggedIn: req.session.loggedIn,
-      
+
     });
   } catch (err) {
     res.status(500).json(err);

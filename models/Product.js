@@ -33,10 +33,10 @@ Product.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        date_posted: {
-            type: DataTypes.DATE,
-            defaultValue: DataTypes.NOW
-        },
+        // date_posted: {
+        //     type: DataTypes.DATE,
+        //     defaultValue: DataTypes.NOW
+        // },
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,

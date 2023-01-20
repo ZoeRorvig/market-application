@@ -6,6 +6,12 @@ const userData = [
         email: 'ash@ketchum.com',
         password: 'catchemall',
 
+    },
+    {
+        username: 'mareepSheep',
+        email: 'mareep@sheep.com',
+        password: 'baaaZap',
+
     }
 ];
 

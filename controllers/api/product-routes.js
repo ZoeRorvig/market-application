@@ -8,7 +8,7 @@ const withAuth = require('../../utils/auth');
 router.get('/', withAuth, async (req, res) => {
     try {
         const productData = await Product.findAll({
-            attributes: ['id', 'title', 'description', 'price', 'image', 'date_posted', 'user_id', 'category_id'],
+            attributes: ['id', 'title', 'description', 'price', 'image', 'created_at', 'user_id', 'category_id'],
             include: [
                 {
                     model: User,
@@ -43,7 +43,7 @@ router.get('/', withAuth, async (req, res) => {
 router.get('/:id', withAuth, async (req, res) => {
     try {
         const productData = await Product.findByPk(req.params.id, {
-            attributes: ['id', 'title', 'description', 'price', 'image', 'date_posted', 'user_id'],
+            attributes: ['id', 'title', 'description', 'price', 'image', 'created_at', 'user_id', 'category_id'],
             include: [{
                 model: User,
                 attributes: ['username'],
@@ -52,9 +52,9 @@ router.get('/:id', withAuth, async (req, res) => {
 
         // res.status(200).json(categoryData);
 
-        const product = productData.get({ plain: true });
+        const products = productData.get({ plain: true });
         res.render('product', { 
-            product, 
+            products, 
             loggedIn: req.session.loggedIn 
         });
         

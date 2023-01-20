@@ -1,3 +1,5 @@
-DROP DATABASE IF EXISTS tech_blog_db;
+DROP DATABASE IF EXISTS marketplace_db;
 
-CREATE DATABASE tech_blog_db;
+CREATE DATABASE marketplace_db;
+
+USE marketplace_db;

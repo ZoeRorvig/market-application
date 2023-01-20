@@ -44,6 +44,7 @@ router.get('/:id', withAuth, async (req, res) => {
     try {
         const productData = await Product.findByPk(req.params.id, {
             attributes: ['id', 'title', 'description', 'price', 'image', 'user_id','category_id'],
+
             include: [{
                 model: User,
                 attributes: ['username'],

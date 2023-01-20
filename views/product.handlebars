@@ -1,6 +1,17 @@
-<section class="card">
-  <a href="/api/products/{{product.id}}">
-    <header>{{product.title}}</header>
-    <img src="{{product.image}}" alt="{{product.title}}">
-  </a>
-</section>
+<div class="row">
+  <a href="/api/products/{{product.id}}"></a>
+  <div class="col s12 m7 l4">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{product.image}}" alt="{{product.title}}">
+        <span class="card-title">{{product.title}}</span>
+      </div>
+      <div class="card-content">
+        <p>TESTING CARD CONTENT</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+      </div>
+    </div>  
+  </div>
+</div>

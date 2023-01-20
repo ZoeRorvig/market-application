@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Product, User, Category } = require('../../models');
-const withAuth = require('../utils/auth');
+const withAuth = require('../../utils/auth');
 
 
 // GET all products

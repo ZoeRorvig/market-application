@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { Router } = require('express');
 const { Category, User } = require('../../models');
-const withAuth = require('../utils/auth');
+const withAuth = require('../../utils/auth');
+
 
 
 router.get('/', async (req, res) => {
@@ -12,17 +13,17 @@ router.get('/', async (req, res) => {
 
         res.status(200).json(categoryData);
 
-        // const categories = categoryData.map((category) =>
-        //     category.get({ plain: true })
-        // );
-        // res.render('homepage', categories);
+        const categories = categoryData.map((category) =>
+            category.get({ plain: true })
+        );
+        res.render('homepage', categories);
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
     }
 });
 
-router.get('/categories/:id', withAuth,async (req, res) => {
+router.get('/categories/:id', withAuth, async (req, res) => {
     try {
         const categoryData = await Category.findByPk(req.params.id, {
             attributes: ['category_name'],

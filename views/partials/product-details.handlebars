@@ -1,6 +1,17 @@
-<section class="card">
-  <a href="/api/products/">
-    <header>{{product.title}}</header>
-    <img src="{{image}}" alt="{{title}}">
-  </a>
-</section>
+<div class="row">
+  <a href="/api/products"></a>
+  <div class="col s12 m7 l4">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{image}}" alt="{{title}}">
+        <span class="card-title">{{title}}</span>
+      </div>
+      <div class="card-content">
+        <p>{{description}}</p>
+      </div>
+      <div class="card-action">
+        <a href="#">Email Link to come!</a>
+      </div>
+    </div>  
+  </div>
+</div>

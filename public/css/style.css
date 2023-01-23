@@ -1,0 +1,10 @@
+.card-image{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.container{
+    margin-top: 15px;
+}

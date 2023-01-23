@@ -1,9 +1,12 @@
+<div class="row">
 {{#each products as |product|}}
 {{> product-details}}
 {{/each}}
+</div>
 
-<form id="slide-out" class="">
-  <h5>Post a Product</h5>
+<section id="new-post" class="row card">
+<form id="slide-out">
+  <h5 class="center">Post a Product</h5>
   <div class="row">
     <div class="input-field col s12">
       <input id="title" type="text">
@@ -30,8 +33,7 @@
   </div>
   <div class="row">
     <div class="input-field col s12">
-      <select id="select-menu" placeholer="Choose your option">
-        {{!-- <option value="0" disabled selected>Choose your option</option> --}}
+      <select id="select-menu" placeholder="Choose your option">
         <option value="1">Outdoors</option>
         <option value="2">Technology</option>
         <option value="3">Clothing</option>
@@ -51,11 +53,14 @@
     </button>
   </div>
 </form>
+</section>
 
 <div class="fixed-action-btn">
-  <a class="btn-floating btn-large red btn tooltipped" data-position="left" data-tooltip="Make a Post">
+  <a class="btn-floating btn-large red btn tooltipped" data-position="left" data-tooltip="Make a Post" onClick="document.getElementById('new-post').scrollIntoView();">
     <i class="large material-icons">add_box</i>
   </a>
 </div>
+
+
 
 <script src="/js/dashboard.js"></script>

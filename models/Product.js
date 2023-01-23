@@ -33,16 +33,12 @@ Product.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                isEmail: true
-            }
-        },
-        // date_posted: {
-        //     type: DataTypes.DATE,
-        //     defaultValue: DataTypes.NOW
+        // email: {
+        //     type: DataTypes.STRING,
+        //     allowNull: false,
+        //     validate: {
+        //         isEmail: true
+        //     }
         // },
         user_id: {
             type: DataTypes.INTEGER,
@@ -63,7 +59,7 @@ Product.init(
     },
     {
         sequelize,
-        timestamps: true, //NOT SURE IF NEEDED
+        timestamps: true, 
         freezeTableName: true,
         underscored: true,
         modelName: 'product'

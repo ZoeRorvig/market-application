@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
             include: [
                 {
                     model: User,
-                    attributes: ['username'],
+                    attributes: ['username','email'],
                 }, {
                     model: Category,
                     attributes: ['category_name'],
@@ -45,10 +45,15 @@ router.get('/:id', async (req, res) => {
         const productData = await Product.findByPk(req.params.id, {
             attributes: ['id', 'title', 'description', 'price', 'image', 'user_id','category_id'],
 
-            include: [{
-                model: User,
-                attributes: ['username'],
-            }],
+            include: [
+                {
+                    model: User,
+                    attributes: ['username','email'],
+                }, {
+                    model: Category,
+                    attributes: ['category_name'],
+                }
+            ],
         });
 
         // res.status(200).json(categoryData);
@@ -74,8 +79,9 @@ router.post('/', async (req, res) => {
             description: req.body.description,
             price: req.body.price,
             image: req.body.image,
-            date_posted: req.body.date_posted,
-            user_id: req.body.user_id,
+            date_posted: req.body.created_at,
+            // email: req.session.email,
+            user_id: req.session.userId,
             category_id: req.body.category_id,
         });
         res.status(200).json(productData)

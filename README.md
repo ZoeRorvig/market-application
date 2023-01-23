@@ -6,6 +6,9 @@ Introducing (TBD) the newest marketplace app here to make your online shopping e
 
 Similar applications often fail provide a secure environment for community users. Online marketplaces tend to be plagued by scams and false advertisment. During the creation of this application data security has been made a priority and includes authentication processes to protect our users. 
 
+This application was construted using a number of frameworks, including: JavaScript, Node.js, Express.js, Handlebars.js & Sequelize. (TBD) uses the design language Materialize CSS for much of the application's visual styling.  
+
+
 ## Table of Contents
 
 [Installation](#installation)

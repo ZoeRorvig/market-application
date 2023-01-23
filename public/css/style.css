@@ -21,3 +21,8 @@
 .container{
     margin-top: 15px;
 }
+
+#new-post{
+    border: 1px solid black;
+    padding: 10px;
+}

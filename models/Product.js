@@ -18,9 +18,6 @@ Product.init(
         description: {
             type: DataTypes.STRING,
             allowNull: false,
-            validate: {
-                lens: [10],
-            }
         },
         price: {
             type: DataTypes.FLOAT,

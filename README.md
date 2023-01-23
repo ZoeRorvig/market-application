@@ -19,18 +19,18 @@ This application was construted using a number of frameworks, including: JavaScr
 
 [Questions](#questions)
 
- ## Installation 
+## Installation 
   
   n/a
   
-  ## Usage
+## Usage
   
   n/a
 
-  ## Contributing 
+## Contributing 
   
   n/a
 
-  ## Questions
+## Questions
 
-  For any questions please feel free to reach out through the accounts listed below:
+For any questions please feel free to reach out through the accounts listed below:

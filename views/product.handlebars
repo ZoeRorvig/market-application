@@ -8,8 +8,8 @@
         <p>Posted by {{product.user.username}} on {{format_date product.created_at}}</p>
         <p>{{product.description}}</p>
         <p>${{product.price}}</p>
-        <div class="card-action center-align">
-          <a href="mailto:{{product.user.email}}">Serious Inquiries only!</a>  
+        <div class="card-action center-align"> 
+          <p>If interested please reach out via email:<a href="mailto:{{product.user.email}}"> {{product.user.email}}</a>  
           </p> 
         </div>
     </div>

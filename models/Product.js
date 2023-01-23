@@ -33,13 +33,6 @@ Product.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        // email: {
-        //     type: DataTypes.STRING,
-        //     allowNull: false,
-        //     validate: {
-        //         isEmail: true
-        //     }
-        // },
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,

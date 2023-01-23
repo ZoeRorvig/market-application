@@ -12,8 +12,11 @@
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">{{title}}<i class="material-icons right">close</i></span>
         <p>{{description}}</p>
-        <div class="card-action">
-          <a href="mailto:{{user.email}}">Serious Inquiries only!</a>
+        <p>${{price}}</p>
+        <div class="card-action center-align">
+          <a href="mailto:{{user.email}}">Serious Inquiries only!</a>  
+          <p>If interested please reach out via email:<a href="mailto:{{user.email}}"> {{user.email}}</a>  
+          </p> 
         </div>
       </div>
     </div>

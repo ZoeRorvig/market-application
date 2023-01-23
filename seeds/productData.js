@@ -34,8 +34,8 @@ const productData = [
         category_id: 2,
     },
     {
-        title: 'Orange-Yellow VW Bus',
-        description: 'Selling to buy a really cool kite. Man with the yellow hat love it, so I am sure you will too.',
+        title: 'Yellow VW Bus',
+        description: 'Selling to buy a really cool kite. Man with the yellow hat loves it, so I am sure you will too.',
         price: 1000.00,
         image: 'https://images.pexels.com/photos/2832251/pexels-photo-2832251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         user_id: 3,      
@@ -43,7 +43,7 @@ const productData = [
     },
     {
         title: 'Grey Plates',
-        description: 'Set of 6 grey plates',
+        description: 'Set of 6 grey plates. Simple and sleek.',
         price: 10.00,
         image: 'https://images.pexels.com/photos/5514789/pexels-photo-5514789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         user_id: 3,      

@@ -17,7 +17,7 @@ This application was construted using a number of frameworks, including: JavaScr
 
 [Contributing](#contributing)
 
-[Questions](#questions)
+[Authors & Acknowledgement](#authors-&-acknowledgment)
 
 ## Installation 
   
@@ -33,6 +33,12 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate. 
 
-## Questions
+## Authors & Acknowledgement
+
+* Zoë Rorvig - [ZoeRorvig](https://github.com/ZoeRorvig)
+* Taz Lowry - [Deiontre10](https://github.com/Deiontre10)
+* Chris Bonime - [Cujion](https://github.com/Cujion)
+* Terrance Smith - [NewDev2298](https://github.com/NewDev2298)
 
 For any questions please feel free to reach out through the accounts listed below:
+

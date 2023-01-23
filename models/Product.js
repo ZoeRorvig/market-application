@@ -33,6 +33,13 @@ Product.init(
             type: DataTypes.STRING,
             allowNull: false
         },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                isEmail: true
+            }
+        },
         // date_posted: {
         //     type: DataTypes.DATE,
         //     defaultValue: DataTypes.NOW

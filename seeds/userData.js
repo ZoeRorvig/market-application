@@ -12,7 +12,19 @@ const userData = [
         email: 'mareep@sheep.com',
         password: 'baaaZap',
 
-    }
+    },
+    {
+        username: 'curiousGeorge',
+        email: 'curious@george.com',
+        password: 'sillyMonkey1',
+
+    },
+    {
+        username: 'beauty&Beast',
+        email: 'belle@beauty.com',
+        password: 'luv2read',
+
+    },
 ];
 
 const seedUser = () => User.bulkCreate(userData);

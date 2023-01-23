@@ -5,6 +5,19 @@
     justify-items: center;
 }
 
+.card-image-indiv{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.card-indiv{
+    padding: 15px;
+}
+
 .container{
     margin-top: 15px;
 }

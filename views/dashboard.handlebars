@@ -3,3 +3,58 @@
 {{#each products as |product|}}
 {{> product-details}}
 {{/each}}
+
+    <div id="slide-out" class="sidenav-trigger">
+      <h5>Post a Product</h5>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="title" type="text">
+          <label for="text">Title</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="description" type="text">
+          <label for="description">Description</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="price" type="number" class="validate">
+          <label for="price">Price</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="image" type="text">
+          <label for="text">Image</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select multiple>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Outdoors</option>
+            <option value="2">Technology</option>
+            <option value="3">Clothing</option>
+            <option value="4">Furniture</option>
+            <option value="5">Home Goods</option>
+            <option value="6">Pets</option>
+            <option value="7">Travel</option>
+            <option value="8">Sports</option>
+            <option value="9">Vehicles</option>
+          </select>
+          <label>Category</label>
+        </div>
+      </div>
+      <div class="row">
+      <button id="post" class="btn waves-effect waves-light col l12" type="submit" name="action">Post<i class="material-icons right">send</i>
+      </button>
+      </div>
+    </div>
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red btn tooltipped" data-position="left" data-tooltip="Make a Post">
+      <i class="large material-icons">add_box</i>
+    </a>
+  </div>

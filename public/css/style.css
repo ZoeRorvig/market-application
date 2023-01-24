@@ -26,3 +26,15 @@
     border: 1px solid black;
     padding: 10px;
 }
+
+.login-card{
+    padding: 0 10px 10px 10px;
+}
+
+.signup-card{
+    padding: 0 10px 10px 10px;
+}
+
+.diff-color{
+    color: #29335C;
+}

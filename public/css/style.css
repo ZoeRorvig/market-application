@@ -1,11 +1,11 @@
-.card-image{
+.card-image {
     height: 200px;
     display: flex;
     align-items: center;
     justify-items: center;
 }
 
-.card-image-indiv{
+.card-image-indiv {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -14,30 +14,31 @@
     border: 2px solid black;
 }
 
-.card-indiv{
+.card-indiv {
     padding: 15px;
 }
 
-.container{
+.container {
     margin-top: 15px;
 }
 
-#new-post{
+#new-post {
     border: 1px solid black;
     padding: 10px;
 }
 
-.login-card{
+.login-card {
     padding: 0 10px 10px 10px;
 }
 
-.signup-card{
+.signup-card {
     padding: 0 10px 10px 10px;
 }
 
-.diff-color{
+.diff-color {
     color: #29335C;
 }
+
 
 .card-width{
     width: 600px;
@@ -51,4 +52,15 @@
 .login-h2{
     margin: 10px 0 10px 0;
 }
+
+
+.account-btn {
+    margin-right: 8px;
+}
+
+#password-input-signup, #password-input-login{
+    margin-bottom: 15px;
+}
+
+
 

@@ -39,3 +39,16 @@
     color: #29335C;
 }
 
+.card-width{
+    width: 600px;
+}
+
+.card-change{
+    display: flex;
+    justify-content: center;
+}
+
+.login-h2{
+    margin: 10px 0 10px 0;
+}
+

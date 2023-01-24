@@ -46,3 +46,7 @@
 #password-input-signup, #password-input-login{
     margin-bottom: 15px;
 }
+
+footer{
+    padding: 10px;
+}

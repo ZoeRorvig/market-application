@@ -8,9 +8,13 @@
 <form id="slide-out">
   <h5 class="center">Post a Product</h5>
   <div class="row">
-    <div class="input-field col s12">
+    <div class="input-field col s12 m6">
       <input id="title" type="text">
       <label for="text">Title</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <input id="price" type="number" class="validate">
+      <label for="price">Price</label>
     </div>
   </div>
   <div class="row">
@@ -19,20 +23,13 @@
       <label for="description">Description</label>
     </div>
   </div>
+
   <div class="row">
-    <div class="input-field col s12">
-      <input id="price" type="number" class="validate">
-      <label for="price">Price</label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="input-field col s12">
+    <div class="input-field col s12 m6">
       <input id="image" type="text">
       <label for="text">Image</label>
     </div>
-  </div>
-  <div class="row">
-    <div class="input-field col s12">
+    <div class="input-field col s12 m6">
       <select id="select-menu" placeholder="Choose your option">
         <option value="" disabled selected>Choose your option</option>
         <option value="1">Outdoors</option>
@@ -49,7 +46,7 @@
     </div>
   </div>
   <div class="row">
-    <button id="post" class="btn waves-effect waves-light col l12" type="submit" name="action">Post<i
+    <button id="post" class="btn waves-effect waves-light col s12" type="submit" name="action">Post<i
         class="material-icons right">send</i>
     </button>
   </div>

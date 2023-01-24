@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS marketplace_db;
+DROP DATABASE IF EXISTS sellout_db;
 
-CREATE DATABASE marketplace_db;
+CREATE DATABASE sellout_db;
 
-USE marketplace_db;
+USE sellout_db;

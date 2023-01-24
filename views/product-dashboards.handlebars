@@ -1,0 +1,20 @@
+<div class="row">
+  <a href="/dashboard/{{product.id}}"></a>
+  <div class="card card-indiv hoverable">
+    <div class="card-image card-image-indiv waves-effect waves-block waves-light">
+      <img src="{{product.image}}" alt="{{product.title}}">
+    </div>
+    <span class="card-title grey-text text-darken-4"><strong>{{product.title}}</strong></span>
+    <p>Posted by {{product.user.username}} on {{format_date product.created_at}}</p>
+    <p>{{product.description}}</p>
+    <p>${{product.price}}</p>
+    <div class="card-action center-align">
+      <p>If interested please reach out via email:<a href="mailto:{{product.user.email}}"> {{product.user.email}}</a>
+      </p>
+    </div>
+    <div class="center">
+      <button type="" id="delete-btn" class="btn red">Delete Post</button>
+    </div>
+  </div>
+
+  <script src="/js/deletePost.js"></script>

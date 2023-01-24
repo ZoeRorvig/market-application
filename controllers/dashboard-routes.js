@@ -33,4 +33,44 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
+router.get('/:id', withAuth, async (req, res) => {
+    try {
+        const productData = await Product.findByPk(req.params.id, {
+            attributes: ['id', 'title', 'description', 'created_at', 'price', 'image', 'user_id','category_id'],
+
+            include: [
+                {
+                    model: User,
+                    attributes: ['username','email'],
+                }, {
+                    model: Category,
+                    attributes: ['category_name'],
+                }
+            ],
+        });
+
+        // res.status(200).json(categoryData);
+
+        const product = productData.get({ plain: true });
+        res.render('product-dashboards', { 
+            product, 
+            loggedIn: req.session.loggedIn 
+        });
+        
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
+router.delete('/:id', withAuth, async (req, res) => {
+    try {
+        const postData = await Product.destroy({ where: { id: req.params.id } });
+        res.json(postData);
+    } catch (err) {
+        console.error(err);
+        res.json(err);
+    }
+});
+
 module.exports = router;

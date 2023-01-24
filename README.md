@@ -1,4 +1,4 @@
-# Marketplace Application
+# Sellout Application
 
 GitHub Repository: https://github.com/ZoeRorvig/market-application
 
@@ -28,6 +28,8 @@ Deployed Site: https://dry-tor-88754.herokuapp.com/
   [License](#license)
 
   ## Visuals
+![Signup](./public/assets/images/signup.png)
+
 ![Login](./public/assets/images/login.png)
 
 ![Homepage](./public/assets/images/homepage.png)
@@ -36,7 +38,7 @@ Deployed Site: https://dry-tor-88754.herokuapp.com/
 
 ![Dashboard](./public/assets/images/dashboard.png)
 
-![Full post](./public/assets/images/full-post.png)
+![Full post with delete button](./public/assets/images/fullview-delete-button.png)
 
 ## Installation 
   

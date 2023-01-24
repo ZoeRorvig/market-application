@@ -1,3 +1,9 @@
 {{#each products as |product|}}
 {{> product-details}}
 {{/each}}
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red btn tooltipped" data-position="left" data-tooltip="Go to Top" onClick="document.getElementById('top-page').scrollIntoView();">
+    <i class="large material-icons">arrow_upward</i>
+  </a>
+</div>

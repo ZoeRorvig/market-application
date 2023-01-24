@@ -1,5 +1,7 @@
 # Marketplace Application
 
+GitHub Repository: https://github.com/ZoeRorvig/market-application
+
 ## Description
 
     Introducing SellOut the newest marketplace app here to make your online shopping experience secure, fast and easy! Use SellOut to offload and sell your unwanted goods and/or buy someone else's with just the press of a button. Users will find SellOut's layout to be aesthetically pleasing and easy to navigate so that anyone can be apart of the community. 
